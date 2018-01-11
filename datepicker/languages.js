@@ -17,6 +17,15 @@ export default {
       'dateRange': 'Select Date Range'
     }
   },
+  'ro': {
+    'days': ['Lun', 'Mar', 'Mie', 'Joi', 'Vin', 'Sâm', 'Dum'],
+    'months': ['Ian', 'Feb', 'Mar', 'Apr', 'Mai', 'Iun', 'Iul', 'Aug', 'Sep', 'Oct', 'Noi', 'Dec'],
+    'pickers': ['urmatoarele 7 zile', 'urmatoarele 30 zile', 'ultimele 7 zile', 'ultimele 30 zile'],
+    'placeholder': {
+      'date': 'Selectați Data',
+      'dateRange': 'Selectați Intervalul De Date'
+    }
+  },
   'fr': {
     'days': ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
     'months': ['Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Aout', 'Sep', 'Oct', 'Nov', 'Dec'],
@@ -78,6 +87,15 @@ export default {
     'placeholder': {
       'date': 'Vyberte datum',
       'dateRange': 'Vyberte časové rozmezí'
+    }
+  },
+  'sl': {
+    'days': ['Ned', 'Pon', 'Tor', 'Sre', 'Čet', 'Pet', 'Sob'],
+    'months': ['Jan', 'Feb', 'Mar', 'Apr', 'Maj', 'Jun', 'Jul', 'Avg', 'Sep', 'Okt', 'Nov', 'Dec'],
+    'pickers': ['naslednjih 7 dni', 'naslednjih 30 dni', 'prejšnjih 7 dni', 'prejšnjih 30 dni'],
+    'placeholder': {
+      'date': 'Izberite datum',
+      'dateRange': 'Izberite razpon med 2 datumoma'
     }
   }
 }
