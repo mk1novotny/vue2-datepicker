@@ -10,7 +10,7 @@
             ref="input"
             @click="togglePopup"
             @mousedown="$event.preventDefault()">
-      <i class="mx-input-icon" 
+      <i class="calendar icon" 
         :class="showCloseIcon ? 'mx-input-icon__close' : 'mx-input-icon__calendar'" 
         @mouseenter="hoverIcon"
         @mouseleave="hoverIcon"
