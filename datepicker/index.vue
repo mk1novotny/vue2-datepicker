@@ -2,18 +2,20 @@
   <div class="mx-datepicker"
        :style="{'width': width + 'px','min-width':range ? (type === 'datetime' ? '320px' : '210px') : '140px'}"
        v-clickoutside="closePopup">
-    <input readonly
-          :class="inputClass"
-          :value="text"
-          :placeholder="innerPlaceholder"
-          ref="input"
-          @click="togglePopup"
-          @mousedown="$event.preventDefault()">
-    <i class="mx-input-icon" 
-      :class="showCloseIcon ? 'mx-input-icon__close' : 'mx-input-icon__calendar'" 
-      @mouseenter="hoverIcon"
-      @mouseleave="hoverIcon"
-      @click="clickIcon" ></i>
+    <div class="ui icon input">
+      <input readonly
+            :class="inputClass"
+            :value="text"
+            :placeholder="innerPlaceholder"
+            ref="input"
+            @click="togglePopup"
+            @mousedown="$event.preventDefault()">
+      <i class="mx-input-icon" 
+        :class="showCloseIcon ? 'mx-input-icon__close' : 'mx-input-icon__calendar'" 
+        @mouseenter="hoverIcon"
+        @mouseleave="hoverIcon"
+        @click="clickIcon" ></i>
+    </div>
     <div class="mx-datepicker-popup"
          :class="{'range':range}"
          :style="position"
