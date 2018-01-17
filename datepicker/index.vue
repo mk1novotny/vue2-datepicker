@@ -4,13 +4,15 @@
        v-clickoutside="closePopup">
     <div class="ui icon input">
       <input readonly
+            class="ui input"
+            :style="{'width': width + 'px','min-width':range ? (type === 'datetime' ? '300px' : '180px') : '110px'}"
             :class="inputClass"
             :value="text"
             :placeholder="innerPlaceholder"
             ref="input"
             @click="togglePopup"
             @mousedown="$event.preventDefault()">
-      <i class="calendar icon" 
+      <i class="mx-input-icon link icon" 
         :class="showCloseIcon ? 'mx-input-icon__close' : 'mx-input-icon__calendar'" 
         @mouseenter="hoverIcon"
         @mouseleave="hoverIcon"
@@ -21,7 +23,7 @@
          :style="position"
          ref="calendar"
          v-show="showPopup">
-
+         
       <calendar-panel 
         v-if="!range"
         v-model="currentValue"
